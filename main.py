@@ -13,7 +13,27 @@ repo = ['cat',
         'bunny',
         'book',
         'programming',
-        'procastination']
+        'procastination',
+        'hello',
+        'calculator',
+        'github',
+        'repository',
+        'google',
+        'netflix',
+        'destination',
+        'love',
+        'cold',
+        'christmas',
+        'bold',
+        'awakening',
+        'song',
+        'helicopter',
+        'aircraft',
+        'united',
+        'friends',
+        'high',
+        'bottle',
+        'champagne']
 
 
 
@@ -44,6 +64,7 @@ def Ask_Attempts() :
 
 # Function to display the Progress-O-Meter
 def disp_progress() :
+    print("Attempts remaining : " + str(Attempts))
     for i in range(0 , len(Guess_Word)) :
         if progress[i] :
             print(Guess_Word[i] , end = "")
@@ -58,7 +79,7 @@ def disp_progress() :
 
 # Function to ask the Player for the Guess Letter
 def make_guess() :
-    Guess_Letter = input("Enter a Letter in Lower Case : ")
+    Guess_Letter = input("\nEnter a Letter in Lower Case : ")
     if len(Guess_Letter) == 1 and Guess_Letter.isalpha() and Guess_Letter.islower() :
         return Guess_Letter
     else :
